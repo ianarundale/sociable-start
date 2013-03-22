@@ -1,27 +1,82 @@
+/**
+ * Global
+ */
+
+body{
+	/*background: #e9eaed;*/
+}
+
+.centered {
+	text-align: center;	
+}
+
+
+
+
+/**
+ * Partial layouts
+ */
+
+.header-clear {
+	padding-bottom: 65px;
+}
+
+#footer{
+	background-color: #eee;
+	margin-top: 40px;
+}
+
+
+
 .navbar .container {
     background: black;
+	width: 940px;
 }
 
 
 /* Large desktop */
 @media (min-width: 1200px) { 
+	.navbar .container {
+		background: blue;
+		width: 1170px;
+	}
+	
+	.container {
+		width: 1170px;
+	}
+}
 
+/* Standard layout */
+@media (min-width: 980px) and (max-width: 1199px) { 		
+	.container {
+		width: 940px;
+	}
+	
+	.stream-story{
+		width: 500px;
+	}
 }
  
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { 
-	.container {
-		
-	}	
-
+@media (min-width: 768px) and (max-width: 979px) { 	
+	.navbar .container {
+		width: auto;
+		background: red;
+	}
 }
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-	
+	.navbar .container {
+		width: auto;
+		background: green;
+	}
 }
  
 /* Landscape phones and down */
 @media (max-width: 480px) {
-	
+	.navbar .container {
+		width: auto;
+		background: white;
+	}
 }
